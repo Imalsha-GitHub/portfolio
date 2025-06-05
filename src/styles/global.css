@@ -13,10 +13,33 @@ body {
   overflow-x: hidden;
 }
 
-/* Animation Keyframes */
+/* Add to your existing global.css */
 @keyframes glow {
   from { text-shadow: 0 0 20px rgba(0, 123, 255, 0.3); }
   to { text-shadow: 0 0 40px rgba(0, 123, 255, 0.5); }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007BFF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
 }
 
 /* Scroll animations */
